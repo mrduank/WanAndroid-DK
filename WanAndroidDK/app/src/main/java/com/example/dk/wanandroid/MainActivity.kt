@@ -1,7 +1,8 @@
-package com.example.wanandroid_dk
+package com.example.dk.wanandroid
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.example.wanandroid_dk.R
 
 class MainActivity : AppCompatActivity() {
 
