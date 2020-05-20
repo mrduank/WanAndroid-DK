@@ -1,9 +1,10 @@
 package com.example.baselib.base
 
 import io.reactivex.disposables.CompositeDisposable
+import io.reactivex.disposables.Disposable
 
 
-class BasePresenter<V : IBaseView>(view: V) : IBasePresenter<V> {
+open class BasePresenter<V : IBaseView>(view: V) : IBasePresenter<V> {
 
     protected var view: V? = view
 
@@ -27,7 +28,7 @@ class BasePresenter<V : IBaseView>(view: V) : IBasePresenter<V> {
         compositeDisposable?.clear()
     }
 
-    protected fun addSubscribe(disposable: CompositeDisposable) {
+    protected fun addSubscribe(disposable: Disposable){
         compositeDisposable?.add(disposable)
     }
 }
