@@ -1,2 +1,2 @@
-# WanAndroid-DK
-练手项目
+# Initial page
+
